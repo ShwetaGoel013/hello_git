@@ -1,0 +1,98 @@
+Question 4- Copy information of one object to another and log it to console.
+Ans :  (A) <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+    <script type="text/javascript">
+    	
+    	let person = {
+    		 name : 'Random',
+             age : 20,
+             address :
+          {
+          	city : "Delhi",
+          	pinCode : 10001
+          }
+            
+    	};
+         console.log(person);
+         
+      
+        // shallow copy
+    	let cloneOfPerson =Object.assign({},person);
+    	cloneOfPerson.name= 'NewName';
+    	cloneOfPerson.age=19 ;
+    	cloneOfPerson.address.city ="Mumbai";
+    	cloneOfPerson.address.pinCode =20002;
+    	
+    	console.log(cloneOfPerson);
+
+
+
+
+    </script>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------
+(B)-<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+  <script type="text/javascript">
+  	let person ={
+  		name : "abc",
+  		age : 20,
+
+  		address : {
+  			city : 'Delhi',
+  			pinCode : 10002,
+  		}
+  	};
+
+  	console.log(person);
+   
+   let cloneOfPerson =JSON.parse(JSON.stringify(person));
+   cloneOfPerson.name="xyz";
+   cloneOfPerson.age=19;
+   cloneOfPerson.address.city="Mumbai";
+   cloneOfPerson.address.pinCode=20002;
+
+   console.log(cloneOfPerson);
+
+
+
+  </script>
+</body>
+</html>
+
+-------------------------------------------------------------------------
+(C) -<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	   const person = {
+	   	 name :'abc',
+	   	 age : 20,
+	   }
+
+	   console.log(person);
+
+	   let cloneOfPerson ={
+	   	  ...person
+	   };
+
+	   console.log(cloneOfPerson);
+</script>
+</body>
+</html>
