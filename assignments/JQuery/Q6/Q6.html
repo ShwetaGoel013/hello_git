@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 6</title>
+    <style>
+        div{
+            color: darkblue;
+        }
+        p {
+            color: teal;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+	$(document).ready(function() {
+		    $("#btn").click(function() {
+			    $("div").replaceWith($("<p>Now I am changed.</p>"));
+		    });
+	    });
+    </script>
+
+</head>
+<body>
+<div>I am going to change.</div> <br>
+<button id="btn">change div to p </button>
+</body>
+</html>

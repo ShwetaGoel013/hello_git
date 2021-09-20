@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Question 16
+	</title>
+</head>
+<body>
+	<table border="10px">
+		<tr class="removeMe">
+			<td>hello</td>
+			<td><button class="button">X</button></td>
+		</tr>
+	</table>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".button").click(function(){
+			$.ajax({
+				url: 'ajax.html',
+				type: 'DELETE',
+				success: function(result){
+					$(".removeMe").hide();
+				}
+			});	
+			});
+		});
+	</script>
+
+</body>
+</html>
