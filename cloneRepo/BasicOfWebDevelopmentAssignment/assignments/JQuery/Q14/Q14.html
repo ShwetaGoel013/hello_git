@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+</style>
+<script>
+    $(document).ready(function(){    
+        $('.mark').each(function(i,e) {
+       if($(e).text() > 10) 
+          $(e).parent().css('background-color','red');
+    });
+    });
+</script>
+</head>
+<body>
+<table id="table">
+  <tr>
+    <th>Name</th>
+    <th>Marks</th>
+  </tr>
+  <tr>
+    <td class="name">Rahul</td>
+    <td class="mark">15</td>
+  </tr>
+  <tr>
+    <td class="name">Rohit</td>
+    <td class="mark">3</td>
+  </tr>
+  <tr>
+    <td class="name">Harsh</td>
+    <td class="mark">14</td>
+  </tr>
+  <tr>
+    <td class="name">John</td>
+    <td class="mark">8</td>
+  </tr>
+  <tr>
+    <td class="name">Deepak</td>
+    <td class="mark">6</td>
+  </tr>
+  <tr>
+    <td class="name">Golu</td>
+    <td class="mark">11</td>
+  </tr>
+</table>
+</body>
+</html>

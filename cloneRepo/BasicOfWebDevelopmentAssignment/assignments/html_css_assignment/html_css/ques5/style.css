@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color:blue   
+}
+
+table,th,td{
+    border: 2px solid black;
+    margin-left: 100px;
+    margin-top:40px;
+    border-collapse: collapse;
+}
+th,td {
+    text-align: center;
+}
+tr:hover {
+    background-color: cadetblue;
+}

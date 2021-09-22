@@ -1,0 +1,76 @@
+h1,nav{
+    display: inline-block;
+    color: #2fc2a4;
+}
+
+nav{
+    padding-top: 40px;
+    padding-right: 20px;
+    float: right;
+}
+.main_content{
+    margin-left: 400px;
+    width: 500px;
+    margin-top: 20px;
+    border: 2px solid #C0C0C0;
+}
+#bug {
+    background-color: #C0C0C0;
+    height: 70px;
+}
+#bug_head{
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-left: 30px;
+}
+form{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+label{
+    color:#7d8080;
+    font-weight: bold;
+}
+input{
+    margin-bottom: 10px;
+    border: 2px solid #C0C0C0;
+    border-radius: 5px;
+}
+select{
+    color: white;
+    width: 440px;
+    height:30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2fc2a4 ;
+    margin-bottom: 10px ;
+}
+#Description{
+    height: 60px;
+}
+#Business{
+    margin-left: 100px;
+}
+#Version{
+    height: 30px;
+}
+footer{
+        background-color: #e3e6e6;
+        height: 60px;
+        border-top: 2px solid #C0C0C0;
+}
+#Attachments{
+    width:440px;
+    
+}
+button{
+    border: none;
+    color: white;
+    background-color: #2fc2a4;
+    float: right;
+    width:70px;
+    height: 30px;
+    margin-right: 40px;
+    border-radius: 5px;
+    margin-top: 15px;;
+}

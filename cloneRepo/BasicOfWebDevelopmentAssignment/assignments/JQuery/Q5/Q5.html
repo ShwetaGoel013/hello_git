@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("button").click(function() {
+				$(".target").parent("#main").css('font-size', '40px');
+			});
+			
+		});
+	</script>
+</head>
+<body>
+<div id="main">
+	<p class="target"> I will change my size.</p>
+</div>
+
+<div id="main2">
+	<p class="target">I will not change my size.</p>
+</div>
+<button class="btn">change font</button>
+</body>
+</html>

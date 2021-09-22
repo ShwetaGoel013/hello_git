@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+  <script type="text/javascript">
+  	let person ={
+  		name : "abc",
+  		age : 20,
+
+  		address : {
+  			city : 'Delhi',
+  			pinCode : 10002,
+  		}
+  	};
+
+  	console.log(person);
+   
+   let cloneOfPerson =JSON.parse(JSON.stringify(person));
+   cloneOfPerson.name="xyz";
+   cloneOfPerson.age=19;
+   cloneOfPerson.address.city="Mumbai";
+   cloneOfPerson.address.pinCode=20002;
+
+   console.log(cloneOfPerson);
+
+
+
+  </script>
+</body>
+</html>

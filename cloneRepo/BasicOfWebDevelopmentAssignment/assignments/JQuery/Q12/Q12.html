@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<title>Question 12</title>
+<style>
+#main {
+    width : 50%;
+    height : 50%;
+    background : yellowgreen;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function()
+    {        
+    $('#main').on('click', function () { alert('Alert Worked!.'); }).children().on('click','li', function (e) {
+        e.stopPropagation(); 
+    });
+    });
+</script>    
+</head>
+<body>
+<div id="main">
+       <ul>
+       <li> Alert will not work!</li><br><br>
+       <li> Alert will not work!</li><br><br>
+       <li> Alert will not work!</li><br><br>
+       </ul>
+</div>
+</body>
+</html

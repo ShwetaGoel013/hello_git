@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 9</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() { 
+         $('select').on('change', function() {
+         $("#place").append(this.value)
+    });
+    });
+    </script>
+</head>
+<body>
+<p>Please! Select your vacation spot.</p>
+<select>
+  <option value="">Select items</option>
+  <option value="Manali">Manali
+  <option value="Chopta">Chopta
+  <option value="Nainital">Nainital
+  <option value="Kedarnath">Kedarnath
+</select>
+<p>You want to go to : </p><p id="place"></p>
+</body>
+</html>

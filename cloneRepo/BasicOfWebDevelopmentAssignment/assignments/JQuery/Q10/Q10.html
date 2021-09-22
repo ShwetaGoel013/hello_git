@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 10</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#main').hover(function(){
+                    $('.dd').slideDown('medium');
+                },
+                function(){
+                    $('.dd').slideUp('medium')
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="main">Hover over me for Dropdown!
+            <p class="dd">Python</p>
+            <p class="dd">Java</p>
+            <p class="dd">C++</p>
+        </div>
+    </body>
+</html>

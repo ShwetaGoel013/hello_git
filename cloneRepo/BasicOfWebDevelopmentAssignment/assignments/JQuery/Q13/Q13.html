@@ -1,0 +1,44 @@
+
+<html>
+<head>
+<title>Question 13</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        var maxh = 0;
+        var dn=0;
+        var i=0;
+           $(".main").each(function()
+           {    i+=1;
+             var h = $(this).height();
+             
+                  if(h > maxh){
+                       maxh = h;
+                       dn=i;
+                    }         
+          });
+        alert('Max height: '+maxh+" of div "+dn); 
+   });
+</script>
+</head>
+<body>
+    <div class="main">
+        I'm div 1<br>
+        One<br>
+    </div>
+    <br>
+    <div class="main">
+        I'm div 2<br>
+        One<br>
+        Two<br>
+        Three<br>
+    </div>
+   <br>
+    <div class="main">
+        I'm div 3<br>
+        One<br>
+        Two<br>      
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>TO THE NEW</h1>
+            <nav>
+                <a>Home</a>
+                <a>Quick Help</a>
+            </nav>
+        </header>
+        <hr>
+        <div class="main_content">
+            <header id="bug">
+                <h1 id="bug_head"><strong>Bug Report</strong></h1>
+            </header>
+            <form >
+                <label for="title">Title*</label> <br>
+                <input type="text" id="title" size="52"></input>
+                <br>
+                <label for="description">Description*</label> <br>
+                <input type="text" id="Description" size="52"></input>
+                <br>
+                <label for="OS">Operating System:</label><br>
+                <select id="OS">
+                    <option>Windows XP</option>
+                    <option>Ubuntu</option>
+                    <option>Mac OS</option>
+                </select>
+                <br>
+                <label for="Product">Product:*</label><br>
+                <select id="Product">
+                    <option>Formoid</option>
+                    <option>JotForm</option>
+                    <option>CognitoForms</option>
+                </select>
+                <label for="Version">Version*</label> <br>
+                <input type="text" id="Version" size="14"></input>
+                <br>
+                <label for="License">License:</label><br>
+                <input type="radio" name="license" id="Free">
+                <label for="Free">Free</label> 
+                <input type="radio" name="license" id="Business">
+                <label for="Business">Business</label> 
+                <br>
+                <label for="Severity">Severity:</label><br>
+                <select id="Severity">
+                    <option>Critical</option>
+                    <option>Major</option>
+                    <option>Minor</option>
+                    <option>Moderate</option>
+                </select>
+                <label type="Attachments">Attachments:</label><br>
+                <input type="file" id="Attachments" value=""><br>
+                </form>
+            <footer>
+                <button type="submit"><strong>Send</strong></button>
+            </footer>
+        </div>
+    </body>
+</html>

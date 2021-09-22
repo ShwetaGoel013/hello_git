@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+    <script type="text/javascript">
+    	
+    	let person = {
+    		 name : 'Random',
+             age : 20,
+             address :
+          {
+          	city : "Delhi",
+          	pinCode : 10001
+          }
+            
+    	};
+         console.log(person);
+         
+      
+        // shallow copy
+    	let cloneOfPerson =Object.assign({},person);
+    	cloneOfPerson.name= 'NewName';
+    	cloneOfPerson.age=19 ;
+    	cloneOfPerson.address.city ="Mumbai";
+    	cloneOfPerson.address.pinCode =20002;
+    	
+    	console.log(cloneOfPerson);
+
+
+
+
+    </script>
+</body>
+</html>
